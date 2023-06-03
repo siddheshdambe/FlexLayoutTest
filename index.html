@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login View</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <img class="login-image" src="img/image 1.png" alt="Login Background Image">
+            <div class="login-form">
+                <!-- <p>Welcome back</p>
+                <h1>Login to your account</h1> -->
+
+                <form action="" method="post">
+                    <p>Welcome back</p>
+                    <h1>Login to your account</h1>
+                    <ul>
+                        <li class="email-details">
+                            <label for="email">Email</label></br>
+                            <input type="email" id="email" name="user-email" placeholder="John.snow@gmail.com" required />
+                        </li>
+                        <li class="pwd-details">
+                            <label for="password">Password</label></br>
+                            <input type="password id="password" name="user-pwd" placeholder="*********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                            title="Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        </li>
+                        <li class="features">
+                            <input type="checkbox" id="remember-me" name="remember-me"/>
+                            <label for="remember-me">Remember me</label>
+                            <a href="#" class="forgot-pwd" id="forgot-pwd">Forgot password?</a>
+                        </li>
+                        <button id="login-now" type="submit">Login now</button></br>
+                        <button id="google-login" type="button"><img src="/img/googlelogo.png"></img> Or sign-in with google</button>
+                    </ul>
+                </form>
+
+                <p id="sign-up">Dont have an account? <a href="">Join free today</a></p>
+            </div>
+        </div>
+    </body>
+</html>
